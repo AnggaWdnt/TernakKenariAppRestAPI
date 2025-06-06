@@ -6,9 +6,26 @@ class BuyerHomeScreen extends StatefulWidget {
   const BuyerHomeScreen({super.key});
 
   @override
-void initState() {
-  super.initState ();
-  context.read<GetBurungTersediBloc>().add(GetAllBurungTersediaEvent());
+  State<BuyerHomeScreen> createState() => _BuyerHomeScreenState();
 }
 
+class _BuyerHomeScreenState extends State<BuyerHomeScreen> {
+  @override
+  void initState() {
+    super.initState();
+    context.read<GetBurungTersediBloc>().add(GetAllBurungTersediaEvent());
+  }
+    @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: const Text("Home Screen"),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+
+        actions: []
+      ),
+    );
+  }
 }
