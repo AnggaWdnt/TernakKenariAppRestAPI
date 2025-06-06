@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:developer';
-import 'package:canary_template/data/model/request/admin_profile_request_model.dart';
 import 'package:canary_template/data/model/response/admin_profile_response_model.dart';
 import 'package:canary_template/service/service_http_client.dart';
 import 'package:dartz/dartz.dart';
