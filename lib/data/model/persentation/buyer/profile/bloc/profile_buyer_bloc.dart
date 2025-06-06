@@ -1,3 +1,7 @@
+import 'package:canary_template/data/model/persentation/buyer/profile/bloc/profile_buyer_event.dart';
+import 'package:canary_template/data/model/persentation/buyer/profile/bloc/profile_buyer_state.dart';
+import 'package:canary_template/data/repository/profile_buyer_repository.dart';
+
 class ProfileBuyerBloc extends Bloc<ProfileBuyerEvent, ProfileBuyerState> {
   final ProfileBuyerRepository profileBuyerRepository;
   ProfileBuyerBloc({required this.profileBuyerRepository})
