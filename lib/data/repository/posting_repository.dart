@@ -4,7 +4,7 @@ import 'package:dartz/dartz.dart';
 import 'package:canary_template/data/model/request/admin/posting_jual_request_model.dart';
 import 'package:canary_template/data/model/response/burung_semua_tersedia_model.dart';
 import 'package:canary_template/data/model/response/get_all_burung_response_model.dart';
-import 'package:canary_template/service/service_http_client.dart';
+import 'package:canary_template/services/service_http_client.dart';
 
 class PostingRepostory {
   final ServiceHttpClient _serviceHttpClient;

@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:developer';
 import 'package:canary_template/data/model/response/admin_profile_response_model.dart';
-import 'package:canary_template/service/service_http_client.dart';
+import 'package:canary_template/services/service_http_client.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 

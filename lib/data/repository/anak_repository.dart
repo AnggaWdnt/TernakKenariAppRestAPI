@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:canary_template/service/service_http_client.dart';
+import 'package:canary_template/services/service_http_client.dart';
 import 'package:dartz/dartz.dart';
 
 
