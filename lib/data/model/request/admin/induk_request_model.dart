@@ -8,4 +8,14 @@ class IndukRequestModel {
   final String? keterangan;
   final String? gambarInduk;
 
+  IndukRequestModel({
+    this.noRing,
+    this.tanggalLahir,
+    this.jenisKelamin,
+    this.jenisKenari,
+    this.keterangan,
+    this.gambarInduk,
+  });
+
+
 }
