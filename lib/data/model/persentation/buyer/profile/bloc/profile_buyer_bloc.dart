@@ -6,5 +6,20 @@ class ProfileBuyerBloc extends Bloc<ProfileBuyerEvent, ProfileBuyerState> {
     on<GetProfileBuyerEvent>(_getProfileBuyer);
   }
 
+  Future<void> _addProfileBuyer(
+    AddProfileBuyerEvent event,
+    Emitter<ProfileBuyerState> emit,
+  ) async {
+    emit(ProfileBuyerLoading());
+    final result = await profileBuyerRepository.addProfileBuyer(
+      event.requestModel,
+    );
+    result.fold((error) => emit(ProfileBuyerAddError(message: error)), (
+      profile,
+    ) {
+      emit(ProfileBuyerAdded(profile: profile));
+    });
+  }
+
 
 }
