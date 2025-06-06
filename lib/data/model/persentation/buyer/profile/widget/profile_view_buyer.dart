@@ -5,4 +5,11 @@ class ProfileViewBuyer extends StatelessWidget {
   final Data profile;
   const ProfileViewBuyer({super.key, required this.profile});
 
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      
+    );
+  }
 }
