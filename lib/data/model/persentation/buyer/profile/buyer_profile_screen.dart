@@ -15,4 +15,10 @@ class _BuyerProfileScreenState extends State<BuyerProfileScreen> {
     super.initState();
     context.read<ProfileBuyerBloc>().add(GetProfileBuyerEvent());
   }
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+  appBar: AppBar(title: Text("Profil Pembeli")),
+    );
+  }
 }
