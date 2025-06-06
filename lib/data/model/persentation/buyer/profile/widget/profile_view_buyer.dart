@@ -34,6 +34,15 @@ class ProfileViewBuyer extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
+            TextButton(
+              onPressed: () {
+                context.pushAndRemoveUntil(
+                  const BuyerHomeScreen(),
+                  (route) => false,
+                );
+              },
+              child: const Text("Go to Home"),
+            ),
           ],
         ),
       ),
